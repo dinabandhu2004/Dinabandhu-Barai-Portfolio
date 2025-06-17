@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.nav{
+    height: 80px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+}
+
+.navRoute{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.navBtn{
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+    border: none;
+}
+
+.navBtn:hover{
+    color: #16079a;
+}
