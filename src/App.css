@@ -1,0 +1,77 @@
+.navBar{
+  height: 80px;
+  background-color: #fbf8f8f1;
+  opacity: 0.6;
+  margin: 10px;
+}
+
+.homeSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeConText{
+  height: 500px;
+  width: 1000px;
+  margin: 10px 30px;
+  background-color: #fbf8f8f1;
+  opacity: 0.6;
+  border-radius: 50px;
+}
+
+.homeConImg{
+  height: 400px;
+  width: 400px;
+  margin: 10px 30px;
+  background-color: #fbf8f8f1;
+  opacity: 0.6;
+  border-radius: 220px;
+}
+
+.aboutSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutConImg{
+  min-height: 400px;
+  width: 400px;
+  margin: 10px 30px;
+  background-color: #fbf8f8f1;
+  opacity: 0.6;
+  border-radius: 220px;
+}
+.aboutConText{
+  min-height: 500px;
+  width: 1000px;
+  margin: 10px 30px;
+  background-color: #fbf8f8f1;
+  opacity: 0.6;
+  border-radius: 50px;
+}
+
+.skillSection{
+  min-height: 500px;
+  margin: 10px;
+  background-color: #fbf8f8f1;
+  opacity: 0.6;
+  border-radius: 50px;
+}
+
+.projectSection{
+  min-height: 500px;
+  margin: 10px;
+  background-color: #fbf8f8f1;
+  opacity: 0.6;
+  border-radius: 50px;
+}
+
+.contactSection{
+  min-height: 500px;
+  margin: 10px;
+  background-color: #fbf8f8f1;
+  opacity: 0.6;
+  border-radius: 50px;
+}
