@@ -1,0 +1,29 @@
+.content{
+    padding: 40px;
+}
+.fontSmall{
+    font-size: 20px;
+    padding:  10px 20px;
+}
+.fontBig{
+    font-size: 40px;
+    padding: 20px;
+}
+.btn-col{
+    border: none;
+    background-color: #291baf;
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.Homelinks{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    padding: 25px 0px;
+    
+}
+.Homelinks div{
+    cursor: pointer;
+}
