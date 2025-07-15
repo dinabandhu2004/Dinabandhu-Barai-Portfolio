@@ -10,11 +10,11 @@ function Nav() {
     <div className='nav'>
         <div><span style={{color:'#291baf'}}>D</span>inabandhu <span style={{color:'#16079a'}}>B</span>arai</div>
         <div className='navRoute'>
-            <button className='navBtn' onClick={handleClick} style={{ color: color }}>Home</button>
-            <button className='navBtn'>About</button>
-            <button className='navBtn'>Skills</button>
-            <button className='navBtn'>Projoects</button>
-            <button className='navBtn'>Contact</button>
+            <button className='navBtn' onClick={handleClick} style={{ color: color }}><a className="navBtn" href="#home">Home</a></button>
+            <button className='navBtn'><a className="navBtn" href="#about">About</a></button>
+            <button className='navBtn'><a className="navBtn" href="#skills">Skills</a></button>
+            <button className='navBtn'><a className="navBtn" href="#project">Projects</a></button>
+            <button className='navBtn'><a className="navBtn" href="#contact">Contact</a></button>
         </div>
     </div>
   )

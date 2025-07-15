@@ -7,6 +7,16 @@
     align-items: center;
     font-family: "Pacifico", cursive;
     font-size: 50px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: none;
+}
+.nav div{
+    background: none;
+}
+span{
+    background: none;
 }
 
 .navRoute{
@@ -19,6 +29,8 @@
     font-size: 25px;
     padding: 15px;
     border: none;
+    text-decoration: none;
+    background: none;
 }
 
 .navBtn:hover{

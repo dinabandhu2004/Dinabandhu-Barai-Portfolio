@@ -11,18 +11,19 @@ function App() {
   return (
     <>
       <div className='navBar'><Nav/></div>
-      <div className='homeSection'>
+      <div  id='home' className='homeSection'>
         <div className='homeConText'><HomeContent/></div>
-        
         <div className='homeConImg'><img src={myImage} alt="" /></div>
       </div>
-      <div className="aboutSection">
+
+      <div id='about' className="aboutSection">
         <div className='aboutConImg'></div>
-        <div className='aboutConText'><AboutComponet></AboutComponet></div>
+        <div className='aboutConText'><AboutComponet/></div>
       </div>
-      <div className="skillSection"></div>
-      <div className="projectSection"></div>
-      <div className="contactSection"></div>
+
+      <div id='skills' className="skillSection"></div>
+      <div id='project' className="projectSection"></div>
+      <div id='contact' className="contactSection"></div>
     </>
   )
 }
