@@ -6,6 +6,8 @@ import Nav from './components/Nav'
 import HomeContent from './components/HomeContent'
 import AboutComponet from './components/aboutComponet'
 import SkillsComponent from './components/SkillsComponent'
+import ContactComponent from './components/contactComponent'
+import FooterComponent from './components/FooterComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,7 +27,7 @@ function App() {
 
       <div id='skills' className="skillSection"><SkillsComponent/></div>
       <div id='project' className="projectSection"></div>
-      <div id='contact' className="contactSection"></div>
+      <div id='contact' className="contactSection"><ContactComponent/> <FooterComponent/></div>
     </>
   )
 }

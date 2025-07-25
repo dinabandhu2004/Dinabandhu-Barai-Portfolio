@@ -1,5 +1,5 @@
 import './HomeContent.css'
-import { Link } from 'react-router-dom'
+import { FaPhone,FaEnvelope, FaLinkedin, FaGithub, FaInstagram, FaCheckCircle } from 'react-icons/fa';
 
 const HomeContent = () => {
   return (
@@ -9,9 +9,9 @@ const HomeContent = () => {
       <div className='fontSmall'>FullStack Developer</div>
       <button className='fontSmall btn-col'><a href="#contact" style={{ textDecoration: 'none', backgroundColor: "#291baf" }}>Contact</a></button>
       <div className='Homelinks'>
-        <div><a href="https://github.com/dinabandhu2004" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-        <div><a href="https://www.linkedin.com/in/dinabandhu-barai-802668244/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-        <div><a href="mailto:dinabandhu2004barai@gmail.com">Gmail</a></div>
+        <div><a href="https://github.com/dinabandhu2004" target="_blank" rel="noopener noreferrer"><FaGithub/></a></div>
+        <div><a href="https://www.linkedin.com/in/dinabandhu-barai-802668244/" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a></div>
+        <div><a href="mailto:dinabandhu2004barai@gmail.com"><FaEnvelope/></a></div>
       </div>
 
 
