@@ -2,7 +2,6 @@
   padding: 40px 20px 20px;
   text-align: center;
   position: relative;
-  background-color: #f8f8f8; /* Optional: light background */
 }
 
 /* Scroll to top button */
@@ -15,7 +14,6 @@
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  background-color: #291baf;
   color: white;
   transition: background-color 0.3s ease;
 }
