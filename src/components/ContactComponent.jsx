@@ -76,7 +76,7 @@ const ContactComponent = () => {
           <button type="submit" className="send-button">Send Message </button>
         </form>
       </div>
-      <ToastContainer position="bottom-right" autoClose={3000} theme="dark" />
+      <ToastContainer className="response" position="bottom-right" autoClose={3000} theme="dark" />
 
     </div>
   );

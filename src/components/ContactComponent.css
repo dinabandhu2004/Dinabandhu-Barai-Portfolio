@@ -160,4 +160,19 @@ textarea::placeholder {
     font-size: 13px;
     padding: 10px;
   }
+  .response .Toastify__toast {
+    font-size: 8px;
+    padding: 4px 8px;
+    min-height: 28px;
+    margin: 6px;
+    width: 350px;
+  }
+
+  .response .Toastify__toast-body {
+    font-size: 10px;
+  }
+
+  .response .Toastify__close-button {
+    font-size: 12px;
+  }
 }
