@@ -1,4 +1,3 @@
-import React from 'react';
 import './SkillsComponent.css';
 import C from '../assets/C.png';
 import Python from '../assets/Python.png'

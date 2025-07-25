@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import myImage from './assets/myImage.jpg'
 import myImage2 from './assets/myImage2.jpg'
@@ -8,9 +7,9 @@ import AboutComponet from './components/aboutComponet'
 import SkillsComponent from './components/SkillsComponent'
 import ContactComponent from './components/contactComponent'
 import FooterComponent from './components/FooterComponent'
+import ProjectComponent from './components/ProjectComponent'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -26,7 +25,7 @@ function App() {
       </div>
 
       <div id='skills' className="skillSection"><SkillsComponent/></div>
-      <div id='project' className="projectSection"></div>
+      <div id='project' className="projectSection"><ProjectComponent/></div>
       <div id='contact' className="contactSection"><ContactComponent/> <FooterComponent/></div>
     </>
   )
