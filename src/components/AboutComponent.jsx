@@ -1,7 +1,7 @@
 import React from 'react'
 import './AboutComponent.css'
 
-const AboutComponet = () => {
+const AboutComponent = () => {
     return (
         <div className='content'>
             <div className='abouthead'>About Me</div>
@@ -21,4 +21,4 @@ const AboutComponet = () => {
     )
 }
 
-export default AboutComponet
+export default AboutComponent

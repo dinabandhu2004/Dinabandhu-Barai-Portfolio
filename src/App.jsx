@@ -3,7 +3,7 @@ import myImage from './assets/myImage.jpg'
 import myImage2 from './assets/myImage2.jpg'
 import Nav from './components/Nav'
 import HomeContent from './components/HomeContent'
-import AboutComponet from './components/aboutComponet'
+import AboutComponet from './components/AboutComponent'
 import SkillsComponent from './components/SkillsComponent'
 import ContactComponent from './components/contactComponent'
 import FooterComponent from './components/FooterComponent'
@@ -21,7 +21,7 @@ function App() {
 
       <div id='about' className="aboutSection">
         <div className='aboutConImg'><img src={myImage2} alt=""/></div>
-        <div className='aboutConText'><AboutComponet/></div>
+        <div className='aboutConText'><AboutComponent/></div>
       </div>
 
       <div id='skills' className="skillSection"><SkillsComponent/></div>
