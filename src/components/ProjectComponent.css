@@ -42,7 +42,6 @@
   flex-wrap: nowrap;
 }
 
-/* 🆕 Alternate layout for even cards */
 .project-card.reverse {
   flex-direction: row-reverse;
 }
@@ -102,19 +101,21 @@
   cursor: pointer;
   margin-top: 20px;
 }
-.project-icon span a{
-    background-color: #291baf;
-    transition: background 0.3s ease;
+
+.project-icon span a {
+  background-color: #291baf;
+  transition: background 0.3s ease;
 }
 
 .project-icon span:hover {
   background-color: #f7006f;
 }
-.project-icon span a:hover{
-    background-color: #f7006f;
+
+.project-icon span a:hover {
+  background-color: #f7006f;
 }
 
-/* Responsive */
+/* ✅ Responsive for Tablets */
 @media screen and (max-width: 900px) {
   .project-card,
   .project-card.reverse {
@@ -124,5 +125,55 @@
 
   .project-details {
     align-items: center;
+    padding: 0 20px;
+  }
+
+  .project-image {
+    max-width: 90%;
+  }
+}
+
+/* ✅ Responsive for Mobile Phones */
+@media screen and (max-width: 480px) {
+  .projects-section {
+    padding: 50px 10px;
+  }
+
+  .projects-heading {
+    margin-bottom: 50px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    gap: 30px;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+
+  .project-details {
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  .project-name {
+    font-size: 1.4rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .project-icon span {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+    margin-top: 15px;
   }
 }

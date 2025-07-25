@@ -1,37 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-.nav{
-    height: 80px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Pacifico", cursive;
-    font-size: 50px;
+
+.nav {
+  height: auto;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  width: 100%;
+  background: transparent;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.nav-logo {
+  background: transparent;
+}
+
+span {
+  background: transparent;
+}
+
+.navRoute {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.navBtn {
+  font-size: 25px;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+  background: none;
+  color: inherit;
+}
+
+.navBtn:hover {
+  color: #291baf;
+  cursor: pointer;
+}
+
+/* Hamburger icon - hidden by default */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Tablet view */
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 15px 30px;
+    font-size: 36px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  .navRoute {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    background: none;
-}
-.nav div{
-    background: none;
-}
-span{
-    background: none;
-}
+    gap: 10px;
+    margin-top: 20px;
+  }
 
-.navRoute{
+  .navRoute.open {
     display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
+  }
+
+  .navBtn {
+    font-size: 20px;
+    padding: 8px 0;
+  }
 }
 
-.navBtn{
-    font-size: 25px;
-    padding: 15px;
-    border: none;
-    text-decoration: none;
-    background: none;
-}
+/* Mobile view */
+@media screen and (max-width: 480px) {
+  .nav {
+    font-size: 28px;
+    padding: 10px 20px;
+  }
 
-.navBtn:hover{
-    color: #291baf;
-    cursor: pointer;
+  .hamburger {
+    top: 15px;
+    right: 20px;
+  }
+
+  .navBtn {
+    font-size: 18px;
+  }
 }

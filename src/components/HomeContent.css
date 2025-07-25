@@ -1,33 +1,128 @@
-.content{
-    padding: 40px;
+.content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 80vh;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.fontSmall{
-    font-size: 20px;
-    padding:  10px 20px;
+
+/* Font Size Variants */
+.fontSmall {
+  font-size: 20px;
+  padding: 10px 20px;
 }
-.fontBig{
-    font-size: 40px;
-    padding: 20px;
+
+.fontBig {
+  font-size: 40px;
+  padding: 20px;
+  font-weight: bold;
 }
-.btn-col{
-    border: none;
-    background-color: #291baf;
-    border-radius: 25px;
-    margin-left: 15px;
-    margin-top: 15px;
-    cursor: pointer;
+
+/* Primary Button */
+.btn-col {
+  border: none;
+  background-color: #291baf;
+  border-radius: 25px;
+  margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
-.Homelinks{
-    display: flex;
-    width: 250px;
-    justify-content: space-around;
-    padding: 25px 0px;
-    font-size: 30px;
-    
+
+.btn-col:hover {
+  background-color: #1e138d;
 }
-.Homelinks div{
-    cursor: pointer;
+
+/* Home Links (Social Icons) */
+.Homelinks {
+  display: flex;
+  gap: 25px;
+  padding: 25px 0;
+  font-size: 30px;
+  align-items: center;
 }
-a{
-    text-decoration: none;
+
+.Homelinks div {
+  cursor: pointer;
+}
+
+.Homelinks a {
+  color: #291baf;
+  transition: color 0.3s;
+}
+
+.Homelinks a:hover {
+  color: #f7006f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ✅ Tablet Screens */
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 30px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fontSmall {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .fontBig {
+    font-size: 32px;
+    padding: 15px;
+  }
+
+  .btn-col {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-left: 0;
+  }
+
+  .Homelinks {
+    font-size: 26px;
+    gap: 20px;
+  }
+}
+
+/* ✅ Mobile Screens */
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 20px 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fontSmall {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .fontBig {
+    font-size: 26px;
+    padding: 12px;
+  }
+
+  .btn-col {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-left: 0;
+  }
+
+  .Homelinks {
+    font-size: 22px;
+    gap: 15px;
+    padding: 15px 0;
+  }
 }

@@ -10,7 +10,7 @@
 }
 
 .skillhead span {
-  color: #291baf; 
+  color: #291baf;
 }
 
 .flex-container {
@@ -25,6 +25,13 @@
   flex-direction: column;
   align-items: center;
   width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
 }
 
 .skillimg img {
@@ -36,3 +43,34 @@
   background-color: #ffffff;
 }
 
+/* ✅ Tablet Devices */
+@media screen and (max-width: 768px) {
+  .skill-card {
+    width: 160px;
+  }
+
+  .skillimg img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skillhead {
+    font-size: 1.7rem;
+  }
+}
+
+/* ✅ Mobile Devices */
+@media screen and (max-width: 480px) {
+  .skill-card {
+    width: 140px;
+  }
+
+  .skillimg img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .skillhead {
+    font-size: 1.5rem;
+  }
+}

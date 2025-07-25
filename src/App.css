@@ -1,78 +1,135 @@
-.navBar{
+/* Navbar */
+.navBar {
   height: 80px;
   margin: 10px;
 }
 
-.homeSection{
+/* Home Section */
+.homeSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.homeConText{
-  height: 500px;
-  width: 1000px;
-  margin: 10px 90px;
+.homeConText {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
   border-radius: 50px;
   display: flex;
   align-items: center;
-  padding-left: 70px;
+  padding: 20px;
+  text-align: center;
 }
 
-.homeConImg{
+.homeConImg {
   height: 400px;
   width: 400px;
-  margin: 10px 94px;
+  margin: 10px auto;
   background-color: #bab6b6f1;
   border-radius: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.homeConImg img{
-  height: 400px;
-  width: 400px;
-  background-color: #bab6b6f1;
+
+.homeConImg img {
+  height: 100%;
+  width: 100%;
   border-radius: 220px;
   object-fit: cover;
 }
 
-.aboutSection{
+/* About Section */
+.aboutSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.aboutConImg{
+.aboutConImg {
   max-height: 500px;
-  width: 500px;
-  margin: 10px 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
   border-radius: 250px;
 }
-.aboutConImg img{
+
+.aboutConImg img {
   max-height: 500px;
-  width: 500px;
+  width: 100%;
   border-radius: 250px;
   object-fit: cover;
 }
-.aboutConText{
-  min-height: 500px;
-  width: 800px;
-  margin: 10px 30px;
+
+.aboutConText {
+  min-height: auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
   border-radius: 50px;
+  padding: 20px;
 }
 
-.skillSection{
-  min-height: 500px;
-  margin: 10px;
+/* Sections */
+.skillSection,
+.projectSection,
+.contactSection {
+  min-height: auto;
+  margin: 20px 10px;
   border-radius: 50px;
+  padding: 20px;
 }
 
-.projectSection{
-  min-height: 500px;
-  margin: 10px;
-  border-radius: 50px;
+/* Tablet & Below */
+@media screen and (max-width: 768px) {
+  .homeSection,
+  .aboutSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homeConText,
+  .aboutConText {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .homeConImg,
+  .aboutConImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .homeConImg img,
+  .aboutConImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
 }
 
-.contactSection{
-  min-height: 500px;
-  margin: 10px;
-  border-radius: 50px;
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .homeConImg,
+  .aboutConImg {
+    width: 220px;
+    height: 220px;
+  }
+
+  .homeConText,
+  .aboutConText {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .skillSection,
+  .projectSection,
+  .contactSection {
+    padding: 10px;
+  }
 }

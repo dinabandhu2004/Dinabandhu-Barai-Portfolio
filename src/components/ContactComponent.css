@@ -8,6 +8,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Left Column */
 .contact-left {
   flex: 1;
   min-width: 300px;
@@ -49,16 +50,19 @@
 .contact-icons a {
   font-size: 20px;
   margin-right: 15px;
+  color: inherit;
 }
 
-
+/* Right Column */
 .contact-right {
   flex: 1;
   min-width: 300px;
   padding: 30px;
   border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
+/* Form Layout */
 form {
   display: flex;
   flex-direction: column;
@@ -75,14 +79,18 @@ form {
   flex: 1;
   display: flex;
   flex-direction: column;
+  min-width: 100px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #cbc6c6;
   font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 input::placeholder,
@@ -90,6 +98,7 @@ textarea::placeholder {
   color: #888;
 }
 
+/* Send Button */
 .send-button {
   background-color: #291baf;
   color: white;
@@ -103,4 +112,52 @@ textarea::placeholder {
 
 .send-button:hover {
   background-color: #e6005f;
+}
+
+/* ✅ Responsive Styling */
+@media screen and (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-left h2 {
+    font-size: 24px;
+  }
+
+  .contact-left p,
+  .contact-points li {
+    font-size: 13px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .send-button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-left h2 {
+    font-size: 22px;
+  }
+
+  .contact-left p,
+  .contact-points li {
+    font-size: 12px;
+  }
+
+  .send-button {
+    font-size: 13px;
+    padding: 10px;
+  }
 }
