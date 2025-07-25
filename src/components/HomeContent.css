@@ -27,3 +27,6 @@
 .Homelinks div{
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+}

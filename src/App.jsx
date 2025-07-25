@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import myImage from './assets/myImage.jpg'
+import myImage2 from './assets/myImage2.jpg'
 import Nav from './components/Nav'
 import HomeContent from './components/HomeContent'
 import AboutComponet from './components/aboutComponet'
+import SkillsComponent from './components/SkillsComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,11 +19,11 @@ function App() {
       </div>
 
       <div id='about' className="aboutSection">
-        <div className='aboutConImg'></div>
+        <div className='aboutConImg'><img src={myImage2} alt=""/></div>
         <div className='aboutConText'><AboutComponet/></div>
       </div>
 
-      <div id='skills' className="skillSection"></div>
+      <div id='skills' className="skillSection"><SkillsComponent/></div>
       <div id='project' className="projectSection"></div>
       <div id='contact' className="contactSection"></div>
     </>
