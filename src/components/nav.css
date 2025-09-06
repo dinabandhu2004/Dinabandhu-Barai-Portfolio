@@ -86,7 +86,7 @@ span {
 }
 
 /* Mobile view */
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 480px) {
   .nav {
     font-size: 28px;
     padding: 10px 20px;
