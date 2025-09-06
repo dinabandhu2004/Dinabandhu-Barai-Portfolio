@@ -18,8 +18,7 @@
 }
 
 .typing span {
-  border-right: 2px solid #291baf;
-  animation: blink 0.7s infinite;
+  animation: blink 1s infinite;
 }
 
 @keyframes blink {
