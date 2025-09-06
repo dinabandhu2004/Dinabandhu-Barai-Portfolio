@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import myImage from './assets/myImage.jpg'
 import myImage2 from './assets/myImage2.jpg'
@@ -11,11 +12,12 @@ import ProjectComponent from './components/ProjectComponent'
 
 function App() {
 
+    const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <div className='navBar'><Nav/></div>
+      <div className='navBar'><Nav menuOpen ={menuOpen} setMenuOpen={setMenuOpen}/></div>
       <div  id='home' className='homeSection'>
-        <div className='homeConText'><HomeContent/></div>
+        <div className={`homeConText ${menuOpen ===true? 'expand':''}`} ><HomeContent menuOpen = {menuOpen}/></div>
         <div className='homeConImg'><img src={myImage} alt="" /></div>
       </div>
 

@@ -120,12 +120,23 @@
     width: 220px;
     height: 220px;
   }
+  .aboutSection{
+    flex-direction: column-reverse;
+  }
 
   .homeConText,
   .aboutConText {
     font-size: 15px;
     padding: 10px;
-    height: 400px;
+
+  }
+  
+  .homeConText {
+    height: 250px;
+    transition: height 0.4s ease;
+  }
+  .expand{
+    height: 650px;
   }
 
   .skillSection,

@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './nav.css'
 import { FiMoreVertical } from "react-icons/fi"; // install react-icons if needed
 
-function Nav() {
-  const [menuOpen, setMenuOpen] = useState(false);
+function Nav({menuOpen,setMenuOpen}) {
+
 
   return (
     <div className='nav'>

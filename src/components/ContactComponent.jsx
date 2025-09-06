@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactComponent.css'; 
-import { FaPhone,FaEnvelope, FaLinkedin, FaGithub, FaInstagram, FaCheckCircle } from 'react-icons/fa';
+import { FaPhone,FaEnvelope, FaLinkedin, FaGithub, FaInstagram, FaCheckCircle, FaFileDownload } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -40,7 +40,8 @@ const ContactComponent = () => {
           <a href="https://github.com/dinabandhu2004" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
           <a href="https://www.linkedin.com/in/dinabandhu-barai-802668244/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="mailto:dinabandhu2004barai@gmail.com"><FaEnvelope /></a>
-          <a href="#"><FaInstagram /></a>
+          <a href="https://www.instagram.com/dinabandhu__barai?igsh=anA3ODA0bXAwNGg4"><FaInstagram /></a>
+          <a href="https://drive.google.com/uc?export=download&id=1ubTmmZAIPSEFgKE3BWRQp_ubJdeet3w_" download="Dinabandhu_Barai_CV.pdf" title='CV'><FaFileDownload/></a>
         </div>
         <ul className='contact-points'>
             <li><FaPhone/> +91 9748155048</li>

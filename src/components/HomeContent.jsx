@@ -1,5 +1,5 @@
 import './HomeContent.css'
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaFileDownload} from 'react-icons/fa';
 import { ReactTyped } from 'react-typed';
 
 const HomeContent = () => {
@@ -26,18 +26,23 @@ const HomeContent = () => {
       </button>
       <div className='Homelinks'>
         <div>
-          <a href="https://github.com/dinabandhu2004" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/dinabandhu2004" target="_blank" rel="noopener noreferrer" title='GitHub'>
             <FaGithub/>
           </a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/dinabandhu-barai-802668244/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/dinabandhu-barai-802668244/" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
             <FaLinkedin/>
           </a>
         </div>
         <div>
-          <a href="mailto:dinabandhu2004barai@gmail.com">
+          <a href="mailto:dinabandhu2004barai@gmail.com" target='Gmail'>
             <FaEnvelope/>
+          </a>
+        </div>
+        <div>
+          <a href="https://drive.google.com/uc?export=download&id=1ubTmmZAIPSEFgKE3BWRQp_ubJdeet3w_" download="Dinabandhu_Barai_CV.pdf" title='CV'>
+            <FaFileDownload/>
           </a>
         </div>
       </div>
