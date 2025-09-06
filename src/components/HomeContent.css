@@ -9,6 +9,25 @@
   margin: 0 auto;
 }
 
+/* Typing Text Effect */
+.typing {
+  display: inline-block;
+  color: #291baf;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* .typing span {
+  border-right: 2px solid #291baf;
+  animation: blink 0.7s infinite;
+} */
+
+@keyframes blink {
+  0%   { border-color: transparent; }
+  50%  { border-color: #291baf; }
+  100% { border-color: transparent; }
+}
+
 /* Font Size Variants */
 .fontSmall {
   font-size: 20px;
@@ -32,11 +51,12 @@
   color: white;
   padding: 12px 24px;
   font-size: 16px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn-col:hover {
   background-color: #1e138d;
+  transform: translateY(-2px);
 }
 
 /* Home Links (Social Icons) */
@@ -54,11 +74,12 @@
 
 .Homelinks a {
   color: #291baf;
-  transition: color 0.3s;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .Homelinks a:hover {
   color: #f7006f;
+  transform: scale(1.1);
 }
 
 a {
@@ -82,6 +103,10 @@ a {
   .fontBig {
     font-size: 32px;
     padding: 15px;
+  }
+
+  .typing {
+    font-size: 20px;
   }
 
   .btn-col {
@@ -112,6 +137,10 @@ a {
   .fontBig {
     font-size: 26px;
     padding: 12px;
+  }
+
+  .typing {
+    font-size: 18px;
   }
 
   .btn-col {
