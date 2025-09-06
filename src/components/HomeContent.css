@@ -14,13 +14,13 @@
   display: inline-block;
   color: #291baf;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
 }
 
-/* .typing span {
+.typing span {
   border-right: 2px solid #291baf;
   animation: blink 0.7s infinite;
-} */
+}
 
 @keyframes blink {
   0%   { border-color: transparent; }
