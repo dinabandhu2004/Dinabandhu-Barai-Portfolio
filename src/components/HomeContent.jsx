@@ -41,7 +41,7 @@ const HomeContent = () => {
           </a>
         </div>
         <div>
-          <a href="https://drive.google.com/uc?export=download&id=1ubTmmZAIPSEFgKE3BWRQp_ubJdeet3w_" download="Dinabandhu_Barai_CV.pdf" title='CV'>
+          <a href="https://drive.google.com/uc?export=download&id=1V7F1gHpGxZ1edqaMyCRhzHaYl9uul9m4" download="Dinabandhu_Barai_CV.pdf" title='CV'>
             <FaFileDownload/>
           </a>
         </div>

@@ -41,7 +41,7 @@ const ContactComponent = () => {
           <a href="https://www.linkedin.com/in/dinabandhu-barai-802668244/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="mailto:dinabandhu2004barai@gmail.com"><FaEnvelope /></a>
           <a href="https://www.instagram.com/dinabandhu__barai?igsh=anA3ODA0bXAwNGg4"><FaInstagram /></a>
-          <a href="https://drive.google.com/uc?export=download&id=1ubTmmZAIPSEFgKE3BWRQp_ubJdeet3w_" download="Dinabandhu_Barai_CV.pdf" title='CV'><FaFileDownload/></a>
+          <a href="https://drive.google.com/uc?export=download&id=1V7F1gHpGxZ1edqaMyCRhzHaYl9uul9m4" download="Dinabandhu_Barai_CV.pdf" title='CV'><FaFileDownload/></a>
         </div>
         <ul className='contact-points'>
             <li><FaPhone/> +91 9748155048</li>
